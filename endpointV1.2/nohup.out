@@ -1,0 +1,251 @@
+ * Serving Flask app "initCond_endpoint1_2.py"
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5002/ (Press CTRL+C to quit)
+192.168.3.1 - - [03/Feb/2022 16:57:18] "POST /realData HTTP/1.1" 404 -
+192.168.3.1 - - [03/Feb/2022 16:57:38] "POST /realData HTTP/1.1" 200 -
+192.168.3.1 - - [03/Feb/2022 16:58:03] "POST /initCond HTTP/1.1" 200 -
+192.168.3.1 - - [03/Feb/2022 16:58:28] "GET /initCond HTTP/1.1" 200 -
+192.168.3.1 - - [03/Feb/2022 18:52:47] "POST /realData HTTP/1.1" 404 -
+192.168.3.1 - - [03/Feb/2022 18:57:52] "POST / HTTP/1.1" 404 -
+192.168.3.1 - - [03/Feb/2022 22:44:50] "POST /initCond HTTP/1.1" 404 -
+192.168.3.1 - - [03/Feb/2022 22:45:06] "POST /initCond HTTP/1.1" 200 -
+192.168.3.1 - - [03/Feb/2022 22:45:13] "GET /initCond HTTP/1.1" 200 -
+192.168.3.1 - - [03/Feb/2022 22:45:44] "GET /initCond HTTP/1.1" 200 -
+192.168.3.1 - - [03/Feb/2022 22:45:49] "POST /initCond HTTP/1.1" 200 -
+192.168.3.5 - - [04/Feb/2022 01:14:55] "POST /initCond HTTP/1.1" 200 -
+192.168.3.5 - - [04/Feb/2022 01:15:08] "POST /initCond HTTP/1.1" 404 -
+192.168.3.1 - - [04/Feb/2022 15:53:28] "POST /initCond HTTP/1.1" 404 -
+192.168.3.2 - - [29/Mar/2022 23:34:21] "POST /initCond HTTP/1.1" 404 -
+192.168.3.2 - - [29/Mar/2022 23:34:30] "POST /initCond HTTP/1.1" 200 -
+192.168.3.2 - - [29/Mar/2022 23:35:10] "POST /initCond HTTP/1.1" 404 -
+192.168.3.2 - - [29/Mar/2022 23:35:18] "POST /initCond HTTP/1.1" 200 -
+192.168.3.2 - - [29/Mar/2022 23:35:24] "GET /initCond HTTP/1.1" 200 -
+192.168.3.1 - - [06/Apr/2022 11:31:15] "POST /initCond HTTP/1.1" 200 -
+192.168.3.1 - - [06/Apr/2022 12:46:13] "POST /initCond HTTP/1.1" 200 -
+192.168.3.1 - - [06/Apr/2022 12:46:28] "POST /realData HTTP/1.1" 200 -
+192.168.3.1 - - [06/Apr/2022 12:46:48] "POST /realData HTTP/1.1" 200 -
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: 2021-02-31
+scale: Counties
+spatialSelection: ['36001', '36003']
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: 2021-02-28
+scale: Counties
+spatialSelection: ['36001', '36003']
+attr ['DateTime', 'S', 'I', 'I_acum', 'I_active', 'R']
+df_reduce            DateTime       S    I  I_acum  I_active  R
+1330785  2021-01-31  305506  182   18701      2930  3
+1330786  2021-02-01  305506   70   18771      2790  4
+1330787  2021-02-02  305506   87   18858      2690  3
+1330788  2021-02-03  305506   80   18938      2595  3
+1330789  2021-02-04  305506  162   19100      2579  0
+1330790  2021-02-05  305506  115   19215      2427  6
+1330791  2021-02-06  305506  129   19344      2299  1
+1330792  2021-02-07  305506   94   19438      2151  2
+1330793  2021-02-08  305506   69   19507      2022  3
+1330794  2021-02-09  305506   80   19587      1967  1
+1330795  2021-02-10  305506   68   19655      1857  2
+1330796  2021-02-11  305506   93   19748      1771  0
+1330797  2021-02-12  305506   84   19832      1643  1
+1330798  2021-02-13  305506   76   19908      1549  0
+1330799  2021-02-14  305506   74   19982      1463  2
+1330800  2021-02-15  305506   51   20033      1332  1
+1330801  2021-02-16  305506   57   20090      1319  1
+1330802  2021-02-17  305506   42   20132      1274  3
+1330803  2021-02-18  305506   52   20184      1246  0
+1330804  2021-02-19  305506   88   20272      1172  0
+1330805  2021-02-20  305506   64   20336      1121  0
+1330806  2021-02-21  305506   56   20392      1048  1
+1330807  2021-02-22  305506   49   20441      1003  1
+1330808  2021-02-23  305506   45   20486       979  0
+1330809  2021-02-24  305506   40   20526       939  2
+1330810  2021-02-25  305506   94   20620       965  0
+1330811  2021-02-26  305506   63   20683       935  3
+1330812  2021-02-27  305506   75   20758       926  0
+1330813  2021-02-28  305506   90   20848       940  1
+1331512  2021-01-31   46091   25    2578       265  0
+1331513  2021-02-01   46091    8    2586       258  1
+1331514  2021-02-02   46091    8    2594       247  0
+1331515  2021-02-03   46091   17    2611       245  0
+1331516  2021-02-04   46091   18    2629       254  0
+1331517  2021-02-05   46091   23    2652       258  0
+1331518  2021-02-06   46091   13    2665       252  0
+1331519  2021-02-07   46091   18    2683       241  1
+1331520  2021-02-08   46091    7    2690       231  0
+1331521  2021-02-09   46091    8    2698       218  0
+1331522  2021-02-10   46091   12    2710       214  0
+1331523  2021-02-11   46091   11    2721       208  0
+1331524  2021-02-12   46091   13    2734       202  0
+1331525  2021-02-13   46091   13    2747       206  0
+1331526  2021-02-14   46091    8    2755       202  0
+1331527  2021-02-15   46091    5    2760       182  0
+1331528  2021-02-16   46091    8    2768       182  0
+1331529  2021-02-17   46091   28    2796       202  0
+1331530  2021-02-18   46091   17    2813       202  1
+1331531  2021-02-19   46091   10    2823       194  0
+1331532  2021-02-20   46091    9    2832       180  0
+1331533  2021-02-21   46091    7    2839       174  0
+1331534  2021-02-22   46091    5    2844       161  0
+1331535  2021-02-23   46091    6    2850       160  0
+1331536  2021-02-24   46091    6    2856       158  0
+1331537  2021-02-25   46091   13    2869       159  0
+1331538  2021-02-26   46091    9    2878       157  0
+1331539  2021-02-27   46091   14    2892       158  0
+1331540  2021-02-28   46091    8    2900       153  0
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: None
+scale: Counties
+spatialSelection: ['36001', '36003']
+attr ['DateTime', 'S', 'I', 'I_acum', 'I_active', 'R']
+df_reduce            DateTime       S    I  I_acum  I_active  R
+1330785  2021-01-31  305506  182   18701      2930  3
+1331512  2021-01-31   46091   25    2578       265  0
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: 2021-02-31
+scale: Counties
+spatialSelection: ['36001', '36003']
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: 2021-02-31
+scale: Counties
+spatialSelection: ['36001', '36003']
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: None
+scale: Counties
+spatialSelection: ['36001', '36003']
+attr ['DateTime', 'S', 'I', 'I_acum', 'I_active', 'R']
+df_reduce            DateTime       S    I  I_acum  I_active  R
+1330785  2021-01-31  305506  182   18701      2930  3
+1331512  2021-01-31   46091   25    2578       265  0
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: None
+scale: States
+spatialSelection: ['01', '02']
+attr ['DateTime', 'S', 'I', 'I_acum', 'I_active', 'R']
+df_reduce         DateTime        S     I  I_acum  I_active    R
+375   2021-01-31  4903185  4057  459639     38958  122
+1102  2021-01-31   740995   129   54114      2658    0
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: None
+scale: States
+spatialSelection: ['01', '02', '04']
+attr ['DateTime', 'S', 'I', 'I_acum', 'I_active', 'R']
+df_reduce         DateTime        S     I  I_acum  I_active    R
+375   2021-01-31  4903185  4057  459639     38958  122
+1102  2021-01-31   740995   129   54114      2658    0
+1829  2021-01-31  7278717  5025  758404     91503   22
+sim: sim1
+Compartment: SIR
+timeInit: 2021-0sdc1-31
+timeEnd: None
+scale: States
+spatialSelection: ['01', '02', '04']
+sim: sim1
+Compartment: SIR
+timeInit: 2021-0sdc1-31
+timeEnd: None
+scale: States
+spatialSelection: ['01', '02', '04']
+sim: sim1
+Compartment: SIR
+timeInit: 2021-0sdc1-31
+timeEnd: None
+scale: States
+spatialSelection: ['01', '02', '04']
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: None
+scale: States
+spatialSelection: ['01', '02', '04']
+attr ['DateTime', 'S', 'I', 'I_acum', 'I_active', 'R']
+df_reduce         DateTime        S     I  I_acum  I_active    R
+375   2021-01-31  4903185  4057  459639     38958  122
+1102  2021-01-31   740995   129   54114      2658    0
+1829  2021-01-31  7278717  5025  758404     91503   22
+sim: sim1
+Compartment: SIR
+timeInit: 2021-j01-31
+timeEnd: None
+scale: States
+spatialSelection: ['01', '02', '04']
+sim: sim1
+Compartment: SIR
+timeInit: 2021-01-31
+timeEnd: None
+scale: States
+spatialSelection: ['01', '02', '04']
+attr ['DateTime', 'S', 'I', 'I_acum', 'I_active', 'R']
+df_reduce         DateTime        S     I  I_acum  I_active    R
+375   2021-01-31  4903185  4057  459639     38958  122
+1102  2021-01-31   740995   129   54114      2658    0
+1829  2021-01-31  7278717  5025  758404     91503   22
+sim: sam
+Compartment: SEIRHVD
+timeInit: 2021-12-10
+timeEnd: None
+scale: States
+spatialSelection: ['06']
+attr ['DateTime', 'S', 'E', 'I', 'I_acum', 'I_active', 'R', 'H', 'H_acum', 'V', 'V_acum', 'D', 'D_acum']
+df_reduce          DateTime         S       E     I   ...         V    V_acum   D  D_acum
+34989  2021-12-10  39512223  236138  3325   ...    239988  61267276  49   61301
+
+[1 rows x 13 columns]
+sim: sam
+Compartment: SEIRHVD
+timeInit: 2021-12-10
+timeEnd: None
+scale: States
+spatialSelection: ['06']
+attr ['DateTime', 'S', 'E', 'I', 'I_acum', 'I_active', 'R', 'H', 'H_acum', 'V', 'V_acum', 'D', 'D_acum']
+df_reduce          DateTime         S       E     I   ...         V    V_acum   D  D_acum
+34989  2021-12-10  39512223  236138  3325   ...    239988  61267276  49   61301
+
+[1 rows x 13 columns]
+sim: sam
+Compartment: SEIRHVD
+timeInit: 2021-12-10
+timeEnd: None
+scale: States
+spatialSelection: ['06']
+attr ['DateTime', 'S', 'E', 'I', 'I_acum', 'I_active', 'R', 'H', 'H_acum', 'V', 'V_acum', 'D', 'D_acum']
+df_reduce          DateTime         S       E     I   ...         V    V_acum   D  D_acum
+34989  2021-12-10  39512223  236138  3325   ...    239988  61267276  49   61301
+
+[1 rows x 13 columns]
+sim: sam
+Compartment: SEIRHVD
+timeInit: 2021-12-10
+timeEnd: None
+scale: States
+spatialSelection: ['06']
+attr ['DateTime', 'S', 'E', 'I', 'I_acum', 'I_active', 'R', 'H', 'H_acum', 'V', 'V_acum', 'D', 'D_acum']
+df_reduce          DateTime         S       E     I   ...         V    V_acum   D  D_acum
+34989  2021-12-10  39512223  236138  3325   ...    239988  61267276  49   61301
+
+[1 rows x 13 columns]
+sim: sam
+Compartment: SEIRHVD
+timeInit: 2021-12-10
+timeEnd: None
+scale: States
+spatialSelection: ['06']
+attr ['DateTime', 'S', 'E', 'I', 'I_acum', 'I_active', 'R', 'H', 'H_acum', 'V', 'V_acum', 'D', 'D_acum']192.168.3.2 - - [15/Jun/2022 11:24:54] "POST /initCond HTTP/1.1" 200 -
