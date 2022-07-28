@@ -30,20 +30,20 @@ dictToSend = {"sim1": {
               # }
               }
               
-# route = "realData"
-for k in list(dictToSend.keys()):
-  try:
-    t_final = dictToSend[k]['timeEnd']
-  except:
-    t_final = dictToSend[k]['timeInit']
+# # route = "realData"
+# for k in list(dictToSend.keys()):
+#   try:
+#     t_final = dictToSend[k]['timeEnd']
+#   except:
+#     t_final = dictToSend[k]['timeInit']
 
-  if t_final == dictToSend[k]['timeInit']:
-    route = 'initCond'
-  elif t_final == dictToSend[k]['timeEnd']:
-    route = 'realData'
+#   if t_final == dictToSend[k]['timeInit']:
+#     route = 'initCond'
+#   elif t_final == dictToSend[k]['timeEnd']:
+#     route = 'realData'
 
 # res = requests.post(url, json = dictToSend)
-res = requests.post('http://127.0.0.1:5002/' + route, json = dictToSend)
+res = requests.post('http://127.0.0.1:5002/initCond', json = dictToSend)
 # res = requests.post('http://192.168.2.131:2/' + route, json = dictToSend)
 print(res.content)
 print("status_code", res.status_code)

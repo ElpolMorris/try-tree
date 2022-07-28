@@ -8,14 +8,11 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+# df_info = pd.read_csv('Codes_USA', dtype={'FIPS_state': str,'FIPS_county': str})
 
-seirhvdUSA  = pd.read_csv('../endpoint_docs/seirhvdUSA.csv') # SEIRHVD
-statesUSA   = pd.read_csv('../endpoint_docs/statesUSA.csv') # SIR/SEIR states
-countiesUSA = pd.read_csv('../endpoint_docs/countiesUSA.csv') # SIR/SEIR counties
-
-# formateando y pasando los FIPS a string
-fn.fipsToStr([statesUSA, seirhvdUSA, countiesUSA])
-fn.fipsFormat([statesUSA, seirhvdUSA, countiesUSA])
+seirhvdUSA  = pd.read_csv('../endpoint_docs/seirhvd_initCond_by_state.csv', dtype = {'FIPS_state': str}) # SEIRHVD
+statesUSA   = pd.read_csv('../endpoint_docs/seir_initCond_by_states.csv', dtype = {'FIPS_state': str}) # SIR/SEIR states
+countiesUSA = pd.read_csv('../endpoint_docs/seir_initCond_by_county.csv', dtype = {'FIPS_county': str}) # SIR/SEIR counties
 
 
 @app.route("/<apiRoute>", methods = ['GET','POST'])
@@ -41,7 +38,7 @@ def get_initCond(apiRoute):
         print("scale:", scale)
         print("spatialSelection:", spatialSelection)
 
-        #restrictions
+        # RESTRICCIONES Y ERRORES
         if apiRoute not in ["initCond", "realData"]:
             new_dict[apiRoute] = "ERROR. Incorrect route"
 
@@ -70,19 +67,6 @@ def get_initCond(apiRoute):
                 flagTimeEnd = True
             except ValueError:
                 new_dict[timeEnd] = "ERROR. Incorrect format or nonexistent timeEnd"
-
-        # if scale == "States":
-        #     for fips in spatialSelection:
-        #         print(fips, len(fips))
-        #         if len(fips) != 2:
-        #             new_dict[spatialSelection] = "ERROR. One or more FIPS have incorrect format"
-        #             break
-        # elif scale == "Counties":
-        #     for fips in spatialSelection:
-        #         print(fips, len(fips))
-        #         if len(fips) != 5:
-        #             new_dict[spatialSelection] = "ERROR. One or more FIPS have incorrect format"
-        #             break
 
         status_code = 404
 

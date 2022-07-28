@@ -7,7 +7,7 @@ ENDPOINT CONDICIONES INICIALES
     1. export FLASK_APP=initCond_endpoint.py
     2. nohup flask run --host=0.0.0.0 &   --> (nohup para dejar el proceso corriendo en back)
 
-- ID del proceso: 1169131
+- ID del proceso: 22021
 
 - Lista de paquetes instalados:
     * Python       3.8.10
