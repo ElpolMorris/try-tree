@@ -68,11 +68,11 @@ def endpointResponse(route, df, model, scaleName, t_init, t_end, arr_fips):
     for a in compartmentDict[model]:
         attr.append(a)
 
-    print("attr", attr)
+    #print("attr", attr)
 
     df_reduce = df_compile.loc[:, attr]  #[['DateTime', 'S', 'E', 'I', 'I_acum', 'I_active', 'R']]
 
-    print("df_reduce", df_reduce)
+    #print("df_reduce", df_reduce)
 
     df_groupby = pd.DataFrame(df_reduce.groupby(['DateTime']).sum())
     df_groupby = df_groupby.reset_index(level = None, drop = False, inplace = False, col_level = 0, col_fill = '')
