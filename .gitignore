@@ -3,3 +3,5 @@ endpoint_docs/
 endpointV1.1/countiesUSA.csv
 venv/
 endpointv1.2/venv
+__pycache__
+.pytest_cache/
