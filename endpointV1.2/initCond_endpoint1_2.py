@@ -194,6 +194,7 @@ def get_initCond2(apiRoute):
                 timeEnd if apiRoute == "realData" else timeInit,
                 spatialSelection,
             )
+            
 
     elif request.method == "GET":
         if apiRoute not in ["initCond", "realData"]:
