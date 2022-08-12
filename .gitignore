@@ -5,3 +5,5 @@ venv/
 endpointv1.2/venv
 .pytest_cache/
 yarn.lock
+endpointV1.2_forTesting/
+nohup.out
