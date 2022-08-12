@@ -1,16 +1,6 @@
-from re import A
 import pytest
 import initCond_endpoint1_2 as app
-from constants.payload_example import (
-    right_payload_states,
-    right_payload_counties,
-    wrong_scale_states,
-    wrong_scale_counties,
-    wrong_init_date,
-    wrong_end_date,
-    wrong_compartments,
-    empty_info,
-    date_without_data,
+from constants.payload_example import (right_payload_states,right_payload_counties,wrong_scale_states,wrong_scale_counties,wrong_init_date,wrong_end_date,wrong_compartments,empty_info,date_without_data
 )
 from constants.responses import success_response, not_found_response, bad_request
 
@@ -18,11 +8,6 @@ from constants.responses import success_response, not_found_response, bad_reques
 @pytest.fixture()
 def client():
     return app.app.test_client()
-
-
-success_response = b'{"SUCCESS":"Endpoint V1.2 WORKING..."}\n'
-not_found_response = b'{"error":"404 Not Found: Resource not found"}\n'
-
 
 @pytest.mark.parametrize(
     "endpoint, code, message",
@@ -91,7 +76,5 @@ def test_status_code_post_calls(data, code, message, client):
         pass
     else:
         assert post_response_endpoint.data == message
-"""
-    Queda pendiente: 
-    - verificar respuestas de metodos http no disponibles para rutas post
-"""
+
+
