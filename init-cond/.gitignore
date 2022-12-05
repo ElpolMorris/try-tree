@@ -1,0 +1,9 @@
+compute_initCond/
+endpoint_docs/
+endpointV1.1/countiesUSA.csv
+venv/
+endpointv1.2/venv
+.pytest_cache/
+yarn.lock
+endpointV1.2_forTesting/
+nohup.out
